@@ -29,9 +29,8 @@
   .cols { display: grid; grid-template-columns: 1fr; gap: 48px; padding-bottom: 64px; }
   @media (min-width: 720px) { .cols { grid-template-columns: 1fr 1fr; gap: 64px; } }
 
-  ol { list-style: none; margin: 0; padding: 0; counter-reset: item; }
-  li { counter-increment: item; display: grid; grid-template-columns: 2.2em 1fr; padding: 10px 0; border-bottom: 1px solid #0000001f; }
-  li::before { content: counter(item, decimal-leading-zero); font-size: .78rem; font-variant-numeric: tabular-nums; padding-top: .2em; }
+  ul { list-style: none; margin: 0; padding: 0; }
+  li { padding: 10px 0; border-bottom: 1px solid #0000001f; }
 
   a { color: var(--fg); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
   a:hover { text-decoration-thickness: 2px; }
@@ -56,23 +55,23 @@
   <main class="cols">
     <section lang="fr">
       <p class="label">Activités</p>
-      <ol>
+      <ul>
         <li>Conseil produit et rôle de Product Owner</li>
         <li>Accompagnement des équipes dans l'adoption de l'IA pour le développement</li>
         <li>Design et conception d'expérience utilisateur</li>
         <li>Développement d'applications web et mobiles, dont des logiciels pour la santé et des jeux</li>
-      </ol>
+      </ul>
       <p class="contact"><a href="mailto:support@raphmau.ch">support@raphmau.ch</a></p>
     </section>
 
     <section lang="en">
       <p class="label">What we do</p>
-      <ol>
+      <ul>
         <li>Product consulting and Product Owner services</li>
         <li>Helping development teams adopt AI in their workflow</li>
         <li>Design and user experience</li>
         <li>Web and mobile application development, including healthcare software and games</li>
-      </ol>
+      </ul>
       <p class="contact"><a href="mailto:support@raphmau.ch">support@raphmau.ch</a></p>
     </section>
   </main>
